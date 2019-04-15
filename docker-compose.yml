@@ -1,0 +1,11 @@
+version: "3"
+services:
+  database:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=Ayo0yewo
+      - MYSQL_DATABASE=timeoffdb
+      - MYSQL_USER=oyewoas
+      - MYSQL_PASSWORD=Ayo0yewo
+    ports:
+      - "3306:3000"

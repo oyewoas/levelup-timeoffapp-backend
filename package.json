@@ -1,0 +1,26 @@
+{
+  "name": "levelup-timeoffapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "create-migration": "./node_modules/.bin/knex migrate:make --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyewoas/levelup-timeoffapp-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oyewoas/levelup-timeoffapp-backend/issues"
+  },
+  "homepage": "https://github.com/oyewoas/levelup-timeoffapp-backend#readme",
+  "dependencies": {
+    "knex": "^0.16.5",
+    "mysql": "^2.16.0"
+  }
+}
