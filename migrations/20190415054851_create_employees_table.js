@@ -33,5 +33,5 @@ exports.up = async (knex, Promise) => {
 };
 
 exports.down = async (knex, Promise) => {
-  return knex.schema.dropTable('employees');
+  return knex.schema.dropTableIfExists('employees');
 };

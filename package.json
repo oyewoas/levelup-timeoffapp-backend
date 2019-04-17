@@ -8,6 +8,8 @@
     "start": "node server.js",
     "create-migration": "./node_modules/.bin/knex migrate:make --env development",
     "migrate:up": "./node_modules/.bin/knex migrate:latest --env development",
+    "create-seed": "./node_modules/.bin/knex seed:make --env development",
+    "seed": "./node_modules/.bin/knex seed:run",
     "migrate:down": "./node_modules/.bin/knex migrate:rollback --env development"
   },
   "repository": {
@@ -22,7 +24,9 @@
   },
   "homepage": "https://github.com/oyewoas/levelup-timeoffapp-backend#readme",
   "dependencies": {
+    "faker": "^4.1.0",
     "knex": "^0.16.5",
+    "moment": "^2.24.0",
     "mysql": "^2.16.0"
   }
 }
